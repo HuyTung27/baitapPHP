@@ -45,6 +45,7 @@
     <input type="text" id="number2" name="number2"><br><br>
     
     <input type="submit" value="Tính">
+
 </form>
 
 <?php
@@ -63,6 +64,21 @@ function thuong($a, $b){
     } else {
         return "Mẫu số không thể bằng 0";
     }
+}
+function nto($a){
+    if ($a < 2) {
+        echo $a ."không phải là số nguyên tố";
+    }
+    for ($i = 2; $i <= sqrt($a); $i++) {
+        if ($a % $i == 0) {
+            echo $a ."không phải là số nguyên tố";
+        }
+    }
+    echo $a ."là số nguyên tố";
+}
+function so_chan($a){
+    if($a % 2==0) return true;
+    else return false;
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -97,5 +113,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+    
+    
 </body>
 </html>
