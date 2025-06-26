@@ -1,0 +1,891 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.giao-din-my-tnh-ng {
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .giao-din-my-tnh-ng .div {
+    background-color: #ffffff;
+    border: 3px solid;
+    border-color: #ffffff;
+    width: 100%;
+    height: 95em;
+    position: relative;
+  }
+  
+  .giao-din-my-tnh-ng .overlap {
+    position: absolute;
+    width: 100%;
+    height: 5em;
+    top: 0;
+    left: 0;
+    z-index: 7;
+  }
+  
+  .giao-din-my-tnh-ng .header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .giao-din-my-tnh-ng .overlap-group {
+    position: relative;
+    width: 39%;
+    top: 1em;
+    left: 30%;
+  }
+  
+  .giao-din-my-tnh-ng .overlap-group-2 {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background-color: #fafafa;
+  border-radius: 100px;
+  border: 1px solid #000000;
+  width: 100%;
+    height: 2.7em;
+}
+
+.giao-din-my-tnh-ng .search-icon {
+  font-size: 24px;  
+    color: #333;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.giao-din-my-tnh-ng .text-wrapper {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #787878;
+  text-align: center;
+  line-height: normal;
+}
+.giao-din-my-tnh-ng .search-input {
+  border: none; /* Xóa viền của input */
+  outline: none; /* Xóa đường viền khi có focus */
+  background-color: transparent; /* Nền trong suốt để hòa vào background */
+  flex: 1; /* Để input chiếm hết không gian còn lại */
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #787878; /* Màu chữ */
+  padding: 0.5em 1em; /* Padding cho input */
+  font-size: 1em; /* Kích thước chữ */
+}
+
+  
+  .giao-din-my-tnh-ng .text-wrapper-2 {
+    position: absolute;
+    width: 190px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .giao-din-my-tnh-ng .logo {
+    position: absolute;
+    width: 8%;
+    height: 90%;
+    left: 3%;
+
+  }
+  
+  .icon-menubar {
+    font-size: 3.5em; /* Làm cho icon lớn gấp 3 lần (nếu trước là 24px) */
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    right: 4%; /* Căn cách icon menubar với mép phải */
+    top: 50%;
+    transform: translateY(-50%); /* Căn giữa icon theo chiều dọc */
+  }
+  
+  /* Thêm hiệu ứng khi hover qua icon */
+  .icon-menubar:hover {
+    color: #FF416C; /* Đổi màu khi hover */
+  }
+  
+  .giao-din-my-tnh-ng .overlap-2 {
+    position: absolute;
+    top: 5em;
+    width: 100%;
+    height: 4em;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-around; /* Dàn đều các phần tử theo chiều ngang */
+    z-index: 4  ;
+    transition: top 0.3s;
+}
+.sticky {
+  position: fixed; /* Khi thanh trở nên cố định */
+  top: 0; /* Đặt thanh lên đầu trang */
+  width: 100%;
+  z-index: 5; /* Đảm bảo nó nằm trên các phần tử khác */
+  height: 4em;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-around; /* Dàn đều các phần tử theo chiều ngang */
+}
+.sticky a{
+  text-decoration: none;
+  color: black;
+}
+.sticky .home-icon:hover{
+  color: #FF4B2B;
+}
+.sticky a:hover{
+  color: #FF4B2B;
+}
+
+.giao-din-my-tnh-ng .home-icon {
+  font-size: 270%; /* Thay đổi kích thước phù hợp với biểu tượng home */
+  color: #000000; /* Màu sắc của biểu tượng */
+}
+.giao-din-my-tnh-ng .home-icon:hover{
+  color: #FF4B2B;
+}
+.giao-din-my-tnh-ng .text-wrapper-3,
+.giao-din-my-tnh-ng .text-wrapper-4,
+.giao-din-my-tnh-ng .text-wrapper-5 {
+
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+}
+.overlap-2 a {
+  text-decoration: none;
+  color: black;
+}
+.overlap-2 a:hover{
+  color: #FF4B2B;
+}
+  
+  /* bài giảng */
+  .giao-din-my-tnh-ng .overlap-4 {
+    position: absolute;
+    width: 100%;
+    height: 30em;
+    top: 13em;
+}
+
+.giao-din-my-tnh-ng .bi-ging-online {
+    position: absolute;
+    width: 100%;
+    height: 50em;
+}
+
+.slider-wrapper {
+  width: 90%; /* Đảm bảo container chỉ hiển thị số ảnh mong muốn */
+  overflow: hidden; /* Ẩn phần nội dung thừa ra ngoài container */
+  margin: 0 auto;
+  position: relative;
+  height: 18em;
+  margin-left: 7%;
+}
+
+.images {
+  display: flex; /* Đảm bảo ảnh được sắp xếp theo hàng ngang */
+  position: relative; /* Để dễ dàng điều chỉnh vị trí */
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng di chuyển mềm mại */
+  top: 6em;
+    height: 91%;
+  }
+
+.bai_giang {
+  flex: 0 0 30%; /* Mỗi ảnh chiếm 30% chiều rộng của container */
+  height: 14em;
+  margin: 0 1%; /* Khoảng cách giữa các ảnh */
+  opacity: 0; /* Ẩn ảnh ban đầu */
+  transition: opacity 0.5s; /* Hiệu ứng mờ dần */
+
+}
+
+.show {
+  opacity: 1; /* Hiển thị ảnh khi có class show */
+}
+
+.giao-din-my-tnh-ng .text-wrapper-8 {
+    position: absolute;
+    top: 0;
+    left: 44%;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+}
+
+.giao-din-my-tnh-ng .polygon,
+.giao-din-my-tnh-ng .polygon-2 {
+    cursor: pointer; /* Thêm con trỏ chuột khi hover vào nút */
+    z-index: 1; /* Đảm bảo nút không bị ẩn dưới ảnh */
+}
+
+.giao-din-my-tnh-ng .polygon {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 23%;
+    left: 8%;
+    transform: translateX(-50%); /* Căn giữa icon */
+    font-size: 2em;
+}
+
+.giao-din-my-tnh-ng .polygon-2 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 23%;
+    left: 96%;
+    transform: translateX(-50%);
+    font-size: 2em;
+}
+
+.giao-din-my-tnh-ng .frame-2 {
+    position: absolute;
+    font-size: 2em;
+    top: 0.5%;
+    left: 41%;
+}
+  
+  /* tài liệu */
+  .giao-din-my-tnh-ng .overlap-6 {
+    position: absolute;
+    width: 100%;
+    height: 30em;
+    top: 39em;
+}
+
+.giao-din-my-tnh-ng .ti-liu {
+    position: absolute;
+    width: 100%;
+    height: 50em;
+}
+
+.slider-wrapper-2 {
+  width: 90%; /* Đảm bảo container chỉ hiển thị số ảnh mong muốn */
+  overflow: hidden; /* Ẩn phần nội dung thừa ra ngoài container */
+  margin: 0 auto;
+  position: relative;
+  height: 20em;
+  margin-left: 7%;
+}
+
+.images-2 {
+  display: flex; /* Đảm bảo ảnh được sắp xếp theo hàng ngang */
+  position: relative; /* Để dễ dàng điều chỉnh vị trí */
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng di chuyển mềm mại */  
+  top: 6em;
+    height: 91%;
+}
+
+.tai_lieu {
+  flex: 0 0 30%;
+  height: 14em;
+  margin: 0 1%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.show{
+  opacity: 1;
+}
+
+.giao-din-my-tnh-ng .text-wrapper-10 {
+    position: absolute;
+    top: 0;
+    left: 41.7%;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+}
+
+.giao-din-my-tnh-ng .polygon-3,
+.giao-din-my-tnh-ng .polygon-4 {
+    cursor: pointer; /* Thêm con trỏ chuột khi hover vào nút */
+    z-index: 1; /* Đảm bảo nút không bị ẩn dưới ảnh */
+}
+
+.giao-din-my-tnh-ng .polygon-3 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 23%;
+    left: 8%;
+    transform: translateX(-50%); /* Căn giữa icon */
+    font-size: 2em;
+}
+
+.giao-din-my-tnh-ng .polygon-4 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 23%;
+    left: 96%;
+    transform: translateX(-50%);
+    font-size: 2em;
+}
+
+.slider-wrapper-3 {
+  width: 90%; /* Đảm bảo container chỉ hiển thị số ảnh mong muốn */
+  overflow: hidden; /* Ẩn phần nội dung thừa ra ngoài container */
+  margin: 0 auto;
+  position: relative;
+  height: 20em;
+  margin-left: 7%;
+}
+
+.images-3 {
+  display: flex; /* Đảm bảo ảnh được sắp xếp theo hàng ngang */
+  position: relative; /* Để dễ dàng điều chỉnh vị trí */
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng di chuyển mềm mại */  
+  top: 6em;
+    height: 91%;
+}
+
+.tai_lieu1 {
+  flex: 0 0 30%;
+  height: 14em;
+  margin: 0 1%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.show{
+  opacity: 1;
+}
+.giao-din-my-tnh-ng .polygon-5,
+.giao-din-my-tnh-ng .polygon-6 {
+    cursor: pointer; /* Thêm con trỏ chuột khi hover vào nút */
+    z-index: 1; /* Đảm bảo nút không bị ẩn dưới ảnh */
+}
+
+.giao-din-my-tnh-ng .polygon-5 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 62%;
+    left: 8%;
+    transform: translateX(-50%); /* Căn giữa icon */
+    font-size: 2em;
+}
+
+.giao-din-my-tnh-ng .polygon-6 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 62%;
+    left: 96%;
+    transform: translateX(-50%);
+    font-size: 2em;
+}
+
+.giao-din-my-tnh-ng .frame-6 {
+    position: absolute;
+    font-size: 2em;
+    top: 19.5em;
+    left: 39%;
+}
+  
+  /* thao luận */
+  .giao-din-my-tnh-ng .thao-luan {
+    position: absolute;
+    width: 100%;
+    height: 20em;
+    top: 93em;
+    /* left: 4.5%; */
+  }
+  
+  .giao-din-my-tnh-ng .text-wrapper-9 {
+    position: absolute;
+    top: 1%;
+    left: 45%;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .giao-din-my-tnh-ng .frame-3 {
+    position: absolute;
+    top: 2.5%;
+    left: 40%;
+    font-size: 2em;
+  }
+  
+  .giao-din-my-tnh-ng .frame-wrapper {
+    position: absolute;
+    width: 27.5%;
+    height: 91%;
+    top: 32%;
+    left: 4.5%;
+    background-color: #dededecc;
+    border-radius: 13px;
+  }
+  
+  .giao-din-my-tnh-ng .img-wrapper {
+    position: absolute;
+    width: 27.5%;
+    height: 91%;
+    top: 32%;
+    left: 36.5%;
+    background-color: #dededecc;
+    border-radius: 13px;
+  }
+  
+  .giao-din-my-tnh-ng .frame-5 {
+    position: absolute;
+    top: 83%;
+    left: 85%;
+    font-size: 2em;
+
+  }
+  
+  .giao-din-my-tnh-ng .overlap-5 {
+    position: absolute;
+    width: 27.5%;
+    height: 91%;
+    top: 32%;
+    left: 68.5%;
+    background-color: #dededecc;
+    border-radius: 13px;
+  }
+  /* footer */
+  .footer {
+    position: absolute;
+    /* background-color: #00C4FA; */
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    width: 100%;
+    min-height: 200px;
+    top: 83em;
+    justify-content: space-between; /* Căn đều khoảng cách giữa các phần */
+    align-items: center;
+  }
+
+.footer_trai {
+   position: absolute;
+   height: 100%;
+    left: 5%;
+}
+
+.footer_phai {
+   position: absolute;
+   left: 45%;
+   right: 4%;
+   height: 80%;
+   font-size: 17.5px;
+   top: 9%
+}
+.footer_phai_duoi{
+  display: flex;
+  justify-content: space-evenly ;
+  padding-top: 3%;
+}
+.gmail, .facebook{
+  display: flex;
+
+}
+
+/*  */
+#baigiang,
+#tailieu,
+#thaoluan {
+    scroll-margin-top: 7em; /* Khoảng trống bằng chiều cao của header */
+
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Hiển thị menu khi được bật */
+.menu.active {
+  display: block;
+}
+
+.menu-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* menu */
+.container {
+  display: none;
+  background-color: #FF4B2B;
+    border-radius: 15%;
+    width: 17%;
+    top: 7%;
+    left: 80%;
+    padding: 4% 1.4%;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    z-index: 10;
+}
+
+.icon-container {
+  margin-bottom: 30px;
+}
+
+.user-icon {
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-button {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF4B2B;
+  cursor: pointer;
+  transition: transform 80ms ease-in, background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.close-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.close-button i {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/*  */
+/* Kiểu dialog box */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* Kiểu form đăng ký */
+.form-dang-ky {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-dang-ky input, 
+.form-dang-ky select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-dang-ky h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-dang-ky menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-dang-ky button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-dang-ky button[value="cancel"] {
+  background-color: #dc3545; /* Màu đỏ */
+  color: white;
+}
+
+.form-dang-ky button[type="submit"] {
+  background-color: #28a745; /* Màu xanh lá cây */
+  color: white;
+}
+
+.form-dang-ky button:hover {
+  opacity: 0.8;
+}
+
+textarea {
+  width: 100%; /* Full width of the container */
+  max-width: 100%; /* Prevents stretching beyond container */
+  height: 150px; /* Fixed height */
+  resize: none; /* Disable resizing */
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+/* --------------- */
+.khoa-hoc-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+
+.khung-khoa-hoc {
+  display: flex;
+  overflow: hidden;
+  width: 80%; /* Điều chỉnh độ rộng theo nhu cầu */
+}
+
+.the-khoa-hoc {
+  min-width: 200px; /* Điều chỉnh kích thước tùy theo thiết kế */
+}
+
+/* Chỉ cần dùng các class từ qtv.css đã có */
+.thong-tin-ho-so {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-dang-ky label {
+  font-weight: bold;
+}
+
+.form-dang-ky input, 
+.form-dang-ky select, 
+.form-dang-ky textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.dialog-confirm {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin: 10% auto;
+}
+
+/* dialog khóa học */
+.form-thong-tin-khoa-hoc {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-thong-tin-khoa-hoc label {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-thong-tin-khoa-hoc input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.form-thong-tin-khoa-hoc input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+menu button {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+menu button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+menu button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+menu button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+menu button[type="button"]:hover {
+  background-color: #c82333;
+}
+/*  */
+.form-thong-tin-tailieu {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-thong-tin-tailieu label {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-thong-tin-tailieu input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.form-thong-tin-tailieu input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+menu button {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+menu button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+menu button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+menu button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+menu button[type="button"]:hover {
+  background-color: #c82333;
+}
+.alert-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Màu nền */
+  color: white; /* Màu chữ */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.alert-box.show {
+  display: block;
+  opacity: 1;
+}
+
+.alert-box.hide {
+  opacity: 0;
+}

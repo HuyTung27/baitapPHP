@@ -1,0 +1,619 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2{
+  text-align: center;
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+.dau-trang {
+  background-color: #ffffff;
+  padding: 10px 2%;
+  border-bottom: 1px solid #ddd;
+}
+
+.khung-dau-trang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.dieu-huong ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.dieu-huong a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.dieu-huong a:hover{
+  color: #df1126;
+  font-size: 1.1em;
+}
+
+.menu-icon img {
+  width: 30px;
+}
+.fa-bars:hover{
+  color: #df1126;
+  transform: scale(1.1);
+}
+
+.noi-dung-chinh {
+  padding: 20px 2%;
+}
+
+.khoa-hoc, .giao-vien, .thong-bao, .thao-luan {
+  margin-bottom: 20px;
+}
+
+.khung-khoa-hoc, .khung-thao-luan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.the-khoa-hoc, .the-thao-luan {
+  background-color: #f2f2f2;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.giao-vien {
+  margin: 20px 0;
+}
+
+.bang-giao-vien {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  table-layout: fixed;
+}
+
+.bang-giao-vien th,
+.bang-giao-vien td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.bang-giao-vien th {
+  background-color: #f4f4f4;
+}
+
+.nut-dieu-khien {
+  display: flex;
+  gap: 10px;
+}
+
+.nut {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nut-them {
+  background-color: #28a745; /* Màu xanh lá cây */
+  color: white;
+}
+
+.nut-them:hover {
+  background-color: #218838;
+}
+
+.nut-xoa {
+  background-color: #dc3545; /* Màu đỏ */
+  color: white;
+}
+
+.nut-xoa:hover {
+  background-color: #c82333;
+}
+
+.nut-sua {
+  background-color: #ffc107; /* Màu vàng */
+  color: black;
+}
+
+.nut-sua:hover {
+  background-color: #e0a800;
+}
+
+
+.thong-bao .noi-dung-thong-bao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.thong-bao button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nut-dang-thong-bao:hover {
+  background-color: #0056b3; /* Màu xanh dương đậm hơn khi hover */
+  transform: translateY(-2px); /* Dịch chuyển nhẹ lên trên để tạo hiệu ứng nổi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ để tạo cảm giác nút nổi lên */
+}
+
+.chan-trang {
+  background: #FF416C;
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  color: black;
+}
+
+.cot-chan-trang {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-chan-trang {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.thong-tin-chan-trang {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mo-ta {
+  font-size: 14px;
+  color: black;
+  text-align: justify;
+}
+
+.lien-he, .link-facebook {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.icon-email, .icon-facebook {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook-text {
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
+
+.facebook-text:hover {
+  text-decoration: underline;
+}
+
+/* Hiệu ứng mượt mà cho toàn trang */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Hiệu ứng thay đổi nút khi hover */
+.nut {
+  transition: transform 0.3s;
+}
+
+/* Tạo hiệu ứng bóng cho pop-up */
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Ẩn pop-up mặc định */
+.alert.hidden {
+  display: none;
+}
+/* -------------------- */
+/* Kiểu dialog box */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* Kiểu form đăng ký */
+.form-dang-ky {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-dang-ky input, 
+.form-dang-ky select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-dang-ky h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-dang-ky menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-dang-ky button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-dang-ky button:hover{
+  background-color:red ;
+}
+
+.form-dang-ky button[value="cancel"] {
+  background-color: #dc3545; /* Màu đỏ */
+  color: white;
+}
+
+.form-dang-ky button[type="submit"] {
+  background-color: #28a745; /* Màu xanh lá cây */
+  color: white;
+}
+
+.form-dang-ky button:hover {
+  opacity: 0.8;
+}
+
+textarea {
+  width: 100%; /* Full width of the container */
+  max-width: 100%; /* Prevents stretching beyond container */
+  height: 150px; /* Fixed height */
+  resize: none; /* Disable resizing */
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+/* --------------- */
+.khoa-hoc-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+
+.khung-khoa-hoc {
+  display: flex;
+  overflow: hidden;
+  width: 80%; /* Điều chỉnh độ rộng theo nhu cầu */
+}
+
+.the-khoa-hoc {
+  min-width: 200px; /* Điều chỉnh kích thước tùy theo thiết kế */
+}
+.table-container {
+  height: 300px; /* Chiều cao cố định để hiển thị đúng 5 khóa học */
+  overflow-y: auto; /* Tạo thanh cuộn dọc */
+  border: 1px solid #ddd;
+}
+
+
+.bang-giao-vien th, .bang-giao-vien td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  word-wrap: break-word; /* Cho phép xuống dòng nếu nội dung dài quá */
+}
+
+.bang-giao-vien th {
+  background-color: #f1f1f1;
+}
+
+.bang-giao-vien thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Đặt chiều rộng cho từng cột để đảm bảo chúng thẳng hàng */
+.bang-giao-vien th:nth-child(1),
+.bang-giao-vien td:nth-child(1) {
+  width: 10%; /* Cột Mã khóa học */
+}
+
+.bang-giao-vien th:nth-child(2),
+.bang-giao-vien td:nth-child(2) {
+  width: 20%; /* Cột Tên khóa học */
+}
+
+.bang-giao-vien th:nth-child(3),
+.bang-giao-vien td:nth-child(3) {
+  width: 15%; /* Cột Giảng viên */
+}
+
+.bang-giao-vien th:nth-child(4),
+.bang-giao-vien td:nth-child(4) {
+  width: 25%; /* Cột Mô tả */
+}
+
+.bang-giao-vien th:nth-child(5),
+.bang-giao-vien td:nth-child(5) {
+  width: 10%; /* Cột Thời lượng */
+}
+
+.bang-giao-vien th:nth-child(6),
+.bang-giao-vien td:nth-child(6) {
+  width: 10%; /* Cột Chi phí */
+}
+
+.bang-giao-vien th:nth-child(7),
+.bang-giao-vien td:nth-child(7) {
+  width: 10%; /* Cột Thao tác */
+}
+
+/*  */
+.container {
+  display: none;
+    background-color: #FF4B2B;
+    border-radius: 15%;
+    width: 17%;
+    left: 83%;
+    padding: 4% 1.4%;
+    position: absolute;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    z-index: 10;
+}
+
+.icon-container {
+  margin-bottom: 30px;
+}
+
+.user-icon {
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-button {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF4B2B;
+  cursor: pointer;
+  transition: transform 80ms ease-in, background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.close-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.close-button i {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/*  */
+/* Kiểu dialog box */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* Kiểu form đăng ký */
+.form-dang-ky {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-dang-ky input, 
+.form-dang-ky select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-dang-ky h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-dang-ky menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-dang-ky button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-dang-ky button[value="cancel"] {
+  background-color: #dc3545; /* Màu đỏ */
+  color: white;
+}
+
+.form-dang-ky button[type="submit"] {
+  background-color: #28a745; /* Màu xanh lá cây */
+  color: white;
+}
+
+.form-dang-ky button:hover {
+  opacity: 0.8;
+}
+
+textarea {
+  width: 100%; /* Full width of the container */
+  max-width: 100%; /* Prevents stretching beyond container */
+  height: 150px; /* Fixed height */
+  resize: none; /* Disable resizing */
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+/* --------------- */
+.khoa-hoc-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+
+.khung-khoa-hoc {
+  display: flex;
+  overflow: hidden;
+  width: 80%; /* Điều chỉnh độ rộng theo nhu cầu */
+}
+
+.the-khoa-hoc {
+  min-width: 200px; /* Điều chỉnh kích thước tùy theo thiết kế */
+}
+
+/* Chỉ cần dùng các class từ qtv.css đã có */
+.thong-tin-ho-so {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-dang-ky label {
+  font-weight: bold;
+}
+
+.form-dang-ky input, 
+.form-dang-ky select, 
+.form-dang-ky textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.dialog-confirm {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin: 10% auto;
+}
+
+.btn_xacnhan{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #48e948;
+}
+.btn_huy{
+  padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: red;
+}
+.btn_huy:hover{
+  transform: scale(1.05);
+}
+.btn_xacnhan:hover{
+  transform: scale(1.05);
+}

@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2{
+  text-align: center;
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+.dau-trang {
+  background-color: #ffffff;
+  padding: 10px 2%;
+  border-bottom: 1px solid #ddd;
+}
+
+.khung-dau-trang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+
+.menu-icon img {
+  width: 30px;
+}
+
+.noi-dung-chinh {
+  padding: 20px 2%;
+}
+
+.thao-luan {
+  margin-bottom: 20px;
+}
+
+.khung-thao-luan {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.the-thao-luan {
+  background-color: #f2f2f2;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.thong-bao button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.nut-dang-thong-bao:hover {
+  background-color: #0056b3; /* Màu xanh dương đậm hơn khi hover */
+  transform: translateY(-2px); /* Dịch chuyển nhẹ lên trên để tạo hiệu ứng nổi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ để tạo cảm giác nút nổi lên */
+}
+
+.nut-dang-thong-bao:hover {
+  background-color: #0056b3; /* Màu xanh dương đậm hơn khi hover */
+  transform: translateY(-2px); /* Dịch chuyển nhẹ lên trên để tạo hiệu ứng nổi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ để tạo cảm giác nút nổi lên */
+}
+
+.chan-trang {
+  background: #FF416C;
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  color: black;
+}
+
+.cot-chan-trang {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-chan-trang {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.thong-tin-chan-trang {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mo-ta {
+  font-size: 14px;
+  color: black;
+  text-align: justify;
+}
+
+.lien-he, .link-facebook {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.icon-email, .icon-facebook {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook-text {
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
+
+.facebook-text:hover {
+  text-decoration: underline;
+}
+
+/* Hiệu ứng mượt mà cho toàn trang */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Hiệu ứng thay đổi nút khi hover */
+.nut {
+  transition: transform 0.3s;
+}
+
+/* Tạo hiệu ứng bóng cho pop-up */
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Ẩn pop-up mặc định */
+.alert.hidden {
+  display: none;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+.khoa-hoc, .giao-vien, .thong-bao, .thao-luan {
+  margin-bottom: 20px;
+}
+
+.khung-khoa-hoc, .khung-thao-luan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.the-khoa-hoc, .the-thao-luan {
+  background-color: #f2f2f2;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.khoa-hoc-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+
+.khung-khoa-hoc {
+  display: flex;
+  overflow: hidden;
+  width: 80%; /* Điều chỉnh độ rộng theo nhu cầu */
+}
+
+.the-khoa-hoc {
+  min-width: 200px; /* Điều chỉnh kích thước tùy theo thiết kế */
+}
+/* ---------------------------------------------------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Cấu trúc chung cho từng mục thảo luận */
+.discussion-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.discussion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Phần tiêu đề và câu hỏi */
+.question-section {
+  margin-bottom: 10px;
+}
+
+.student-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.question {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Phần trả lời */
+.answer-section {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.teacher-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.answer {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Input để nhập câu trả lời */
+.answer-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+/* Nút gửi */
+.submit-btn {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
